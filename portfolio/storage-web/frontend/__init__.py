@@ -1,1 +1,0 @@
-# Storage Web Frontend Package
