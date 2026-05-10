@@ -23,8 +23,6 @@ A collection of projects built while learning full-stack web development with Py
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MKarthik730)
 [![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
 ---
 
@@ -33,13 +31,7 @@ A collection of projects built while learning full-stack web development with Py
 ```
 website/
 │
-├── backend/                        # FastAPI practice server
-│   ├── igris.py
-│   ├── main.py
-│   ├── server01.py
-│   └── sockets.py
-│
-├── crimson/                        # Hospital Management System
+├── mediflow/                       # Hospital Management System
 │   ├── backend/
 │   │   ├── algorithms/             # Core scheduling algorithms
 │   │   │   ├── bipartite_matching.py
@@ -81,25 +73,6 @@ website/
 │       ├── scheduling.py
 │       └── users.py
 │
-├── database/                       # Database utilities
-│   ├── data.py
-│   ├── database.py
-│   └── databasemodels.py
-│
-├── fastapi/                        # FastAPI learning notes & examples
-│   ├── learn/
-│   │   ├── api_01.py
-│   │   └── user_from.py
-│   ├── 01_ULTIMATE_FASTAPI_TUTORIAL.md
-│   ├── 02_ADVANCED_PRODUCTION_APP.py
-│   ├── 03_COMPREHENSIVE_TESTS.py
-│   ├── 04_DEPLOYMENT_GUIDE.md
-│   └── 05_ADVANCED_REFERENCE.md
-│
-├── frontend/                       # Frontend client
-│   ├── client.py
-│   └── index.html
-│
 ├── portfolio/                      # Personal portfolio site
 │   ├── index.html
 │   ├── script.js
@@ -120,11 +93,6 @@ website/
 │   │   └── app.py
 │   └── requirements.txt
 │
-├── functions.py
-├── index.html
-├── script.js
-├── style.css
-├── requirements.txt
 └── README.md
 ```
 
@@ -132,21 +100,19 @@ website/
 
 ## Projects
 
-**Crimson - Hospital Management System** — Full-stack app with patient management, doctor scheduling, queue management, and analytics powered by FastAPI and PostgreSQL.
+**Mediflow - Hospital Management System** — Full-stack app with patient management, doctor scheduling, queue management, and analytics powered by FastAPI and PostgreSQL.
 
 **Storage Web** — File upload and storage web application with document and image management.
 
 **Portfolio** — Personal portfolio website built with HTML, CSS, and JavaScript.
 
-**FastAPI Learning** — Study notes, tutorials, and practice code for learning FastAPI.
-
 ---
 
 ## Getting Started
 
-**Backend (Crimson)**
+**Backend (Mediflow)**
 ```bash
-cd crimson/backend
+cd mediflow/backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
@@ -158,9 +124,9 @@ pip install -r requirements.txt
 uvicorn backend.main:app --reload
 ```
 
-**Frontend**
+**Portfolio**
 
-Open `index.html` directly in your browser or serve on port 3000.
+Open `portfolio/index.html` directly in your browser.
 
 ---
 
