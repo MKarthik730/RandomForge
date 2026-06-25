@@ -242,13 +242,215 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
         <div class="skills-grid">
           <div class="skill-pill"><span class="skill-dot" style="background:#009688"></span>FastAPI</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#61DAFB"></span>React</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#339933"></span>Node.js / Express</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#000000"></span>Next.js</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#6929C4"></span>LangChain</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#7C3AED"></span>LangGraph</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="skill-cat-label">Data &amp; Infra</div>
+        <div class="skills-grid">
+          <div class="skill-pill"><span class="skill-dot" style="background:#336791"></span>PostgreSQL</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#DC382D"></span>Redis</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#2496ED"></span>Docker</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#F38020"></span>Cloudflare Tunnel</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#0EA5E9"></span>OSRM</div>
+          <div class="skill-pill"><span class="skill-dot" style="background:#38BDF8"></span>Tailwind CSS</div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Selected Work</div>
+  <h2 class="section-title reveal">Things I've <em>built</em></h2>
+  <div class="projects-grid">
+
+    <div class="project-card featured reveal">
+      <div>
+        <div class="project-header">
+          <span class="project-icon">🧠</span>
+          <div class="project-meta">
+            <span class="private-badge">Private</span>
+          </div>
+        </div>
+        <div class="project-name">Cognitus</div>
+        <p class="project-desc">
+          A multi-agent AI analysis platform that runs structured reasoning modes —
+          debate, pre-mortem, iceberg, signal-vs-noise — over any topic, with a
+          post-analysis canvas chat for follow-up. Supports four LLM modes
+          (Free/Groq, Local/Ollama, BYOK, and Browser/WebLLM) plus a privacy-first
+          "Ghost Mode" architecture.
+        </p>
+        <div class="project-tags">
+          <span class="tag">LangGraph</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Redis</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag muted">Vanilla JS Canvas</span>
+        </div>
+      </div>
+      <div class="featured-visual">
+        <div class="cl"><span class="cn">1</span><span class="kw">class</span> <span class="fn">AnalysisGraph</span>:</div>
+        <div class="cl"><span class="cn">2</span>&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">run</span>(self, mode<span class="pt">:</span> <span class="vr">str</span>):</div>
+        <div class="cl"><span class="cn">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="cm"># debate · pre-mortem · iceberg</span></div>
+        <div class="cl"><span class="cn">4</span>&nbsp;&nbsp;&nbsp;&nbsp;graph <span class="pt">=</span> <span class="fn">build_graph</span>(mode)</div>
+        <div class="cl"><span class="cn">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> graph.<span class="fn">stream</span>()</div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <span class="project-icon">📍</span>
+        <a href="https://github.com/MKarthik730" target="_blank" class="project-link">↗</a>
+      </div>
+      <div class="project-name">mediflow</div>
+      <p class="project-desc">
+        Real-time location sharing and routing engine built for medical/emergency
+        coordination — live position updates over WebSockets, route computation
+        via OSRM, and a tunnel-based deployment so it's reachable without a fixed
+        public server.
+      </p>
+      <div class="project-tags">
+        <span class="tag">FastAPI</span>
+        <span class="tag">python-socketio</span>
+        <span class="tag">OSRM</span>
+        <span class="tag muted">Cloudflare Tunnel</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <span class="project-icon">⚙️</span>
+        <a href="https://github.com/MKarthik730" target="_blank" class="project-link">↗</a>
+      </div>
+      <div class="project-name">appgen</div>
+      <p class="project-desc">
+        A config-driven full-stack app generator — describe the schema and the
+        pages you need, and it scaffolds a complete app with a working backend,
+        ORM models, and a styled frontend, ready to run in a container.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Node.js / Express</span>
+        <span class="tag">Sequelize</span>
+        <span class="tag">Next.js</span>
+        <span class="tag muted">Tailwind CSS</span>
+        <span class="tag muted">Docker</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">About</div>
+  <h2 class="section-title reveal">A bit of <em>context</em></h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="about-text">
+        I'm a Computer Science student at <strong>ANITS, Visakhapatnam</strong>,
+        currently working in an ML-focused role at <strong>MSME360</strong>,
+        an MSME enablement platform in India. Most of my time goes into building
+        things end-to-end — backend systems, ML pipelines, and the infrastructure
+        that keeps them running.
+      </p>
+      <p class="about-text">
+        Outside of code, I spend a good chunk of time on <strong>DSA practice in C++</strong>
+        for placement prep, reading about database internals and distributed
+        systems for fun, and writing up what I build for LinkedIn and GitHub.
+      </p>
+      <div class="interests-list">
+        <div class="interest-item"><span class="interest-emoji">⚔️</span> Attack on Titan &amp; One Piece</div>
+        <div class="interest-item"><span class="interest-emoji">🟫</span> Minecraft</div>
+        <div class="interest-item"><span class="interest-emoji">📜</span> Valmiki Ramayana &amp; Indian classical literature</div>
+        <div class="interest-item"><span class="interest-emoji">🎨</span> Fine art, viewed in obsessive detail</div>
+      </div>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item visible">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026</div>
+        <div class="timeline-title">ML Intern, MSME360</div>
+        <div class="timeline-sub">Built a large-scale LightGBM demand forecasting pipeline across thousands of products and stores.</div>
+      </div>
+      <div class="timeline-item visible">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Ongoing</div>
+        <div class="timeline-title">Cognitus</div>
+        <div class="timeline-sub">Multi-agent reasoning platform — debate, pre-mortem, and iceberg analysis modes.</div>
+      </div>
+      <div class="timeline-item visible">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Ongoing</div>
+        <div class="timeline-title">DSA &amp; Placement Prep</div>
+        <div class="timeline-sub">Deep C++ practice — sliding window, backtracking, bit manipulation, and a 20-module DSA vault.</div>
+      </div>
+      <div class="timeline-item visible">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">ANITS, Visakhapatnam</div>
+        <div class="timeline-title">B.Tech, Computer Science</div>
+        <div class="timeline-sub">Coursework spanning DBMS, systems, and software engineering fundamentals.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-label">Get in touch</div>
+      <h2 class="section-title">Let's <em>build</em> something</h2>
+      <p class="contact-text">
+        Open to internships, freelance/contract ML &amp; backend work, and
+        interesting collaborations. Reach out through any of the links here.
+      </p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:karthikmotupalli34@gmail.com" class="contact-link">
+        <span class="contact-link-icon">✉️</span>
+        <span class="contact-link-info">
+          <span class="contact-link-label">Email</span>
+          <span>karthikmotupalli34@gmail.com</span>
+        </span>
+      </a>
+      <a href="https://github.com/MKarthik730" target="_blank" class="contact-link">
+        <span class="contact-link-icon">🐙</span>
+        <span class="contact-link-info">
+          <span class="contact-link-label">GitHub</span>
+          <span>MKarthik730</span>
+        </span>
+      </a>
+      <a href="https://www.linkedin.com/in/karthik-motupalli-0b6951318" target="_blank" class="contact-link">
+        <span class="contact-link-icon">💼</span>
+        <span class="contact-link-info">
+          <span class="contact-link-label">LinkedIn</span>
+          <span>karthik-motupalli</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Karthik Motupalli</span>
+  <span>Built in Vizag, India</span>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+});
+</script>
 
 </body>
 </html>
