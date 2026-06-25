@@ -34,7 +34,7 @@ nav {
 .nav-links a:hover { color:var(--ink); }
 
 /* HERO */
-.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; padding:7rem 3rem 3rem; gap:4rem; position:relative; overflow:hidden; }
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; align-items:center; padding:7rem 3rem 3rem; gap:4rem; position:relative; overflow:visible; }
 .hero::after { content:''; position:absolute; right:-200px; top:-200px; width:600px; height:600px; background:radial-gradient(circle,rgba(192,57,43,0.06) 0%,transparent 70%); pointer-events:none; }
 .hero-left { position:relative; z-index:1; }
 .hero-tag { display:inline-flex; align-items:center; gap:0.5rem; font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); background:rgba(192,57,43,0.07); border:1px solid rgba(192,57,43,0.2); padding:0.35rem 0.85rem; border-radius:2px; margin-bottom:1.5rem; animation:fadeUp 0.6s ease both; }
@@ -164,7 +164,7 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
 /* RESPONSIVE */
 @media(max-width:768px){
   nav{padding:1rem 1.5rem;} .nav-links{display:none;}
-  .hero{grid-template-columns:1fr;padding:5rem 1.5rem 3rem;gap:3rem;}
+  .hero{grid-template-columns:1fr;padding:5rem 1.5rem 3rem;gap:3rem;min-height:auto;}
   .hero-right{align-items:flex-start;} .photo-frame{width:260px;height:300px;} .hero-stats{width:260px;}
   section{padding:3rem 1.5rem;} .skills-inner{padding:0 1.5rem;}
   .about-grid{grid-template-columns:1fr;gap:3rem;}
@@ -193,10 +193,10 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
     <h1>Karthik<br/><em>Motupalli</em></h1>
     <p class="hero-subtitle">CS Student · Builder · ML Enthusiast</p>
     <p class="hero-bio">
-      2nd-year Computer Science student at <strong>ANITS, Vizag</strong>.
+      Computer Science student at <strong>ANITS, Vizag</strong>.
       I build things that run — local AI desktops, LLM routers, real-time safety apps,
       medical routing engines, and multi-agent systems.
-      Stack: <strong>Python, FastAPI, React, TypeScript, Kotlin</strong>
+      Stack: <strong>Python, FastAPI, React</strong>
       + <strong>LangChain &amp; LangGraph</strong>.
     </p>
     <div class="hero-actions">
@@ -213,10 +213,10 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
       <div class="photo-badge">VIZAG, AP · INDIA</div>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">15</div><div class="stat-label">Repos</div></div>
-      <div class="stat"><div class="stat-num">64</div><div class="stat-label">Starred</div></div>
-      <div class="stat"><div class="stat-num">15</div><div class="stat-label">Followers</div></div>
-      <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Projects</div></div>
+      <div class="stat"><div class="stat-num">16</div><div class="stat-label">Repos</div></div>
+      <div class="stat"><div class="stat-num">74</div><div class="stat-label">Starred</div></div>
+      <div class="stat"><div class="stat-num">18</div><div class="stat-label">Followers</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Projects</div></div>
     </div>
   </div>
 </div>
@@ -231,7 +231,6 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
         <div class="skill-cat-label">Languages</div>
         <div class="skills-grid">
           <div class="skill-pill"><span class="skill-dot" style="background:#3572A5"></span>Python</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#3178C6"></span>TypeScript</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#F7DF1E"></span>JavaScript</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#A97BFF"></span>Kotlin</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#F34B7D"></span>C++</div>
@@ -245,362 +244,11 @@ footer span { font-family:'DM Mono',monospace; font-size:0.66rem; letter-spacing
           <div class="skill-pill"><span class="skill-dot" style="background:#61DAFB"></span>React</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#6929C4"></span>LangChain</div>
           <div class="skill-pill"><span class="skill-dot" style="background:#7C3AED"></span>LangGraph</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#FF4500"></span>python-socketio</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#5C8DBC"></span>Leaflet.js</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#FF9900"></span>Firebase</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#FFCA28"></span>Jetpack Compose</div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="skill-cat-label">AI / ML</div>
-        <div class="skills-grid">
-          <div class="skill-pill"><span class="skill-dot" style="background:#EE4C2C"></span>PyTorch</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#FF6F00"></span>Scikit-learn</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#013243"></span>NumPy</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#150458"></span>Pandas</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#412991"></span>Ollama</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#E5C07B"></span>Qwen / Local LLMs</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#0097A7"></span>RAG Pipelines</div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="skill-cat-label">Tools &amp; Platforms</div>
-        <div class="skills-grid">
-          <div class="skill-pill"><span class="skill-dot" style="background:#F05032"></span>Git</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#181717"></span>GitHub</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#46E3B7"></span>Render</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#F38020"></span>Cloudflare</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#336791"></span>PostgreSQL</div>
-          <div class="skill-pill"><span class="skill-dot" style="background:#47A248"></span>MongoDB</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label reveal">Work</div>
-  <h2 class="section-title reveal">Things I've <em>built</em></h2>
-  <div class="projects-grid">
-
-    <!-- FEATURED: void -->
-    <div class="project-card featured reveal">
-      <div>
-        <div class="project-header">
-          <div class="project-icon">🖥️</div>
-          <div class="project-meta">
-            <span class="project-stars">★ 4</span>
-            <a href="https://github.com/MKarthik730/void" target="_blank" class="project-link">↗</a>
-          </div>
-        </div>
-        <div class="project-name">void</div>
-        <p class="project-desc">
-          A privacy-first AI desktop assistant with a glassmorphic floating UI.
-          Runs <strong style="color:var(--tan)">Qwen2.5 3B</strong> fully offline —
-          no cloud, no data leaving your machine. OCR, voice control, and an ambient
-          interface that layers over your entire workflow.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Ollama</span>
-          <span class="tag">Qwen2.5 3B</span><span class="tag">OCR</span>
-          <span class="tag">Voice Control</span><span class="tag">Local LLM</span>
-        </div>
-      </div>
-      <div class="featured-visual">
-        <div class="cl"><span class="cn">1</span><span class="cm"># void — local-first AI assistant</span></div>
-        <div class="cl"><span class="cn">2</span><span class="kw">from</span> <span class="fn">ollama</span> <span class="kw">import</span> <span class="vr">Client</span></div>
-        <div class="cl"><span class="cn">3</span><span class="kw">from</span> <span class="fn">overlay</span> <span class="kw">import</span> <span class="vr">GlassmorphicUI</span></div>
-        <div class="cl"><span class="cn">4</span></div>
-        <div class="cl"><span class="cn">5</span><span class="vr">model</span> <span class="pt">=</span> <span class="st">"qwen2.5:3b"</span></div>
-        <div class="cl"><span class="cn">6</span><span class="vr">client</span> <span class="pt">=</span> <span class="fn">Client</span><span class="pt">(</span><span class="st">"localhost"</span><span class="pt">)</span></div>
-        <div class="cl"><span class="cn">7</span><span class="vr">ui</span> <span class="pt">=</span> <span class="fn">GlassmorphicUI</span><span class="pt">(</span><span class="vr">always_on_top</span><span class="pt">=</span><span class="kw">True</span><span class="pt">)</span></div>
-        <div class="cl"><span class="cn">8</span></div>
-        <div class="cl"><span class="cn">9</span><span class="kw">def</span> <span class="fn">on_voice</span><span class="pt">(</span><span class="vr">text</span><span class="pt">):</span></div>
-        <div class="cl"><span class="cn">10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vr">ctx</span> <span class="pt">=</span> <span class="fn">ocr_screen</span><span class="pt">()</span></div>
-        <div class="cl"><span class="cn">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="vr">client</span><span class="pt">.</span><span class="fn">chat</span><span class="pt">(</span><span class="vr">model</span><span class="pt">,</span> <span class="vr">text</span><span class="pt">+</span><span class="vr">ctx</span><span class="pt">)</span></div>
-        <div class="cl"><span class="cn">12</span><span class="cm"># ↳ zero network. always private.</span></div>
-      </div>
-    </div>
-
-    <!-- helix -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">⚡</div>
-        <div class="project-meta">
-          <span class="private-badge">🔒 private</span>
-          <a href="https://github.com/MKarthik730" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">helix</div>
-      <p class="project-desc">
-        LLM Hub — route prompts through multiple language models with automatic fallback.
-        Built-in auth, configurable model stacks, and a unified API over heterogeneous
-        AI backends. One interface, every model.
-      </p>
-      <div class="project-tags">
-        <span class="tag">JavaScript</span><span class="tag">LLM Routing</span>
-        <span class="tag">Multi-Model</span><span class="tag">Auth</span>
-        <span class="tag muted">Private</span>
-      </div>
-    </div>
-
-    <!-- cognitus -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">🧠</div>
-        <div class="project-meta">
-          <span class="private-badge">🔒 private</span>
-          <a href="https://github.com/MKarthik730" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">cognitus</div>
-      <p class="project-desc">
-        Multi-perspective analysis agent — any situation or question is examined
-        simultaneously through multiple domain-expert AI agents.
-        Each agent owns a lens; cognitus synthesizes the full picture.
-      </p>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">LangChain</span>
-        <span class="tag">Multi-Agent</span><span class="tag muted">Private</span>
-      </div>
-    </div>
-
-    <!-- Memoir -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">🗂️</div>
-        <div class="project-meta">
-          <span class="project-stars">★ 5</span>
-          <a href="https://github.com/MKarthik730/Memoir" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">Memoir</div>
-      <p class="project-desc">
-        A web app to preserve and visualize personal relationships and shared memories.
-        Store photos, audio notes, and text — see how everyone in your life connects
-        through an interactive knowledge graph.
-      </p>
-      <div class="project-tags">
-        <span class="tag">HTML</span><span class="tag">Python</span>
-        <span class="tag">FastAPI</span><span class="tag">Knowledge Graph</span>
-      </div>
-    </div>
-
-    <!-- osrm / mediflow -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">🏥</div>
-        <div class="project-meta">
-          <span class="project-stars">★ 5</span>
-          <a href="https://github.com/MKarthik730/osrm" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">mediflow</div>
-      <p class="project-desc">
-        Real-time ambulance routing with live location sharing.
-        OSRM for optimal routing, python-socketio for sub-second GPS updates,
-        Leaflet.js for map rendering. Deployed on Render + Cloudflare Tunnel.
-      </p>
-      <div class="project-tags">
-        <span class="tag">HTML</span><span class="tag">FastAPI</span>
-        <span class="tag">OSRM</span><span class="tag">Leaflet.js</span>
-        <span class="tag">Cloudflare</span>
-      </div>
-    </div>
-
-    <!-- Aegis -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">🛡️</div>
-        <div class="project-meta">
-          <span class="project-stars">★ 1</span>
-          <a href="https://github.com/MKarthik730/Aegis" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">Aegis</div>
-      <p class="project-desc">
-        Real-time personal safety Android app — SOS triggers, live location sharing,
-        and emergency alerts. Built in Kotlin with Jetpack Compose.
-        When seconds matter, Aegis acts instantly.
-      </p>
-      <div class="project-tags">
-        <span class="tag">Kotlin</span><span class="tag">Android</span>
-        <span class="tag">Jetpack Compose</span><span class="tag">SOS</span>
-      </div>
-    </div>
-
-    <!-- appgen -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">⚙️</div>
-        <div class="project-meta">
-          <span class="project-stars">★ 0</span>
-          <a href="https://github.com/MKarthik730/appgen" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">appgen</div>
-      <p class="project-desc">
-        Config-driven app generator — provide a JSON config, get back a
-        fully scaffolded web app with UI, API, and database wired up automatically.
-        Zero boilerplate, full-stack from a single file.
-      </p>
-      <div class="project-tags">
-        <span class="tag">TypeScript</span><span class="tag">Code Gen</span>
-        <span class="tag">FastAPI</span><span class="tag">JSON Config</span>
-      </div>
-    </div>
-
-    <!-- RandomForge -->
-    <div class="project-card reveal">
-      <div class="project-header">
-        <div class="project-icon">🔧</div>
-        <div class="project-meta">
-          <span class="project-stars">★ 4</span>
-          <a href="https://github.com/MKarthik730/RandomForge" target="_blank" class="project-link">↗</a>
-        </div>
-      </div>
-      <div class="project-name">RandomForge</div>
-      <p class="project-desc">
-        A collection of projects built while mastering full-stack web development
-        with Python, FastAPI, and modern frontend tooling. The forge where
-        everything started.
-      </p>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">FastAPI</span>
-        <span class="tag">Full-stack</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-label reveal">Background</div>
-  <h2 class="section-title reveal">The <em>story so far</em></h2>
-  <div class="about-grid">
-    <div>
-      <p class="about-text reveal">
-        I'm a CS student at <strong>ANITS, Visakhapatnam</strong>, but I treat every project
-        as a real system — not an assignment. I care about things that run in production,
-        handle edge cases, and actually solve problems.
-      </p>
-      <p class="about-text reveal">
-        Current focus: <strong>AI systems with real infrastructure under them.</strong>
-        Local LLMs, multi-agent orchestration, LLM routing, and privacy-first desktop AI.
-        I want to build the layer that makes AI deployable without sacrificing trust.
-      </p>
-      <p class="about-text reveal">
-        One word on the GitHub bio sums it up: <strong>consistency.</strong>
-        It's the only thing that compounds.
-      </p>
-      <div class="interests-list reveal">
-        <div class="interest-item"><span class="interest-emoji">🤖</span>Multi-agent AI &amp; LangGraph orchestration</div>
-        <div class="interest-item"><span class="interest-emoji">🔒</span>Privacy-first &amp; local LLM deployment</div>
-        <div class="interest-item"><span class="interest-emoji">⚡</span>LLM routing &amp; multi-model systems</div>
-        <div class="interest-item"><span class="interest-emoji">📡</span>Real-time infra — sockets &amp; geospatial</div>
-        <div class="interest-item"><span class="interest-emoji">🛡️</span>Safety &amp; civic tech applications</div>
-      </div>
-    </div>
-    <div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 – 2028</div>
-          <div class="timeline-title">B.Tech — Computer Science &amp; Engineering</div>
-          <div class="timeline-sub">ANITS, Visakhapatnam · Strong CGPA · he/him</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
-          <div class="timeline-title">void — Privacy-First AI Desktop</div>
-          <div class="timeline-sub">Qwen2.5 3B running fully offline with glassmorphic floating UI, OCR screen awareness, and voice control.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
-          <div class="timeline-title">helix + cognitus — AI Infrastructure</div>
-          <div class="timeline-sub">Multi-model LLM router with fallback and a multi-perspective analysis agent using domain-expert AI councils.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
-          <div class="timeline-title">mediflow — Medical Routing System</div>
-          <div class="timeline-sub">Real-time ambulance routing with OSRM, python-socketio, Leaflet.js. Live on Render + Cloudflare Tunnel.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024</div>
-          <div class="timeline-title">Memoir + Aegis</div>
-          <div class="timeline-sub">Relationship knowledge graph app and a real-time SOS safety Android app in Kotlin.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024</div>
-          <div class="timeline-title">Open Source · Pull Shark · 15 repos</div>
-          <div class="timeline-sub">Consistently shipping across AI, mobile, web, and systems. Building in public.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<div class="contact-section" id="contact">
-  <div class="contact-inner">
-    <div>
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Let's <em>build</em><br/>something</h2>
-      <p class="contact-text">
-        Looking for internships, open-source collaborations, and interesting problems.
-        If you're building in AI, real-time systems, mobile, or full-stack —
-        let's talk. Vizag → anywhere.
-      </p>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:karthikmotupalli34@gmail.com" class="contact-link">
-        <div class="contact-link-icon">@</div>
-        <div class="contact-link-info">
-          <span class="contact-link-label">Email</span>
-          <span>karthikmotupalli34@gmail.com</span>
-        </div>
-      </a>
-      <a href="https://github.com/MKarthik730" target="_blank" class="contact-link">
-        <div class="contact-link-icon">⌥</div>
-        <div class="contact-link-info">
-          <span class="contact-link-label">GitHub</span>
-          <span>github.com/MKarthik730</span>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/karthik-motupalli-0b6951318" target="_blank" class="contact-link">
-        <div class="contact-link-icon">in</div>
-        <div class="contact-link-info">
-          <span class="contact-link-label">LinkedIn</span>
-          <span>karthik-motupalli-0b6951318</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <span>© 2025 Karthik Motupalli — Visakhapatnam, India</span>
-  <span>consistency.</span>
-</footer>
-
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-  document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.observe(el));
-  document.querySelectorAll('.timeline-item').forEach((item, i) => {
-    item.style.transitionDelay = `${i * 0.1}s`;
-  });
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    nav.style.padding = window.scrollY > 60 ? '0.75rem 3rem' : '1.2rem 3rem';
-  }, { passive: true });
-</script>
 </body>
 </html>
